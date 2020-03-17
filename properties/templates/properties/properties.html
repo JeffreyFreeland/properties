@@ -29,18 +29,5 @@
             {% endfor %}
         </tbody>
     </table>
-    <script>
-        console.log("test");
-        let previousItem = sessionStorage.getItem("someKey");
-        if(previousItem != null){
-            console.log("found that item, it was: " + previousItem);
-        }
-        else {
-            console.log("setting the item.");
-            sessionStorage.setItem("someKey", "someItem");
-            console.log("the item is set.");
-        }
-        sessionStorage.setItem("someKey", "someItem");
-    </script>
 </body>
 </html>
