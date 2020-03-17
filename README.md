@@ -4,9 +4,9 @@ This is a small django project, including some test data, just for fun.
 
 # Notes
 
-Django version: 2.2
-virtual environment not required, but highly encouraged. Instructions are below.
-Use pycharm. The django support isn't built into the free edition, but it's better than notepad.
+- Django version: 2.2
+- virtual environment not required, but highly encouraged. Instructions are below.
+- Use pycharm. The django support isn't built into the free edition, but it's better than notepad.
 
 # Setup steps for windows
 
