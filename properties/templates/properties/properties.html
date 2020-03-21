@@ -1,3 +1,4 @@
+{% load render_table from django_tables2 %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,26 +9,19 @@
 
     <meta charset="UTF-8">
     <title>Properties</title>
+    <style>
+        .table {
+            width: 80%;
+        }
+        .even {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <h1>Properties in here</h1>
-    <table>
-        <thead>
-            <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Zip Code</th>
-        </thead>
-        <tbody>
-            {% for property in property_list %}
-            <tr>
-                <td>{{ property.address }}</td>
-                <td>{{ property.city }}</td>
-                <td>{{ property.state }}</td>
-                <td>{{ property.zip }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+
+    {% render_table table %}
+
 </body>
 </html>
